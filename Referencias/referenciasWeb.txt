@@ -1,0 +1,35 @@
+http://reina.usal.es/biblio/files/figuerola2005algunas.pdf
+http://es.wikipedia.org/wiki/Indexaci%C3%B3n_Sem%C3%A1ntica_Latente
+http://www.cs.famaf.unc.edu.ar/~laura/freeNLP
+http://www.ceibal.edu.uy/contenidos/areas_conocimiento/aportes/python_para_todos.pdf
+http://www.nltk.org/
+http://www.nltk.org/book/ch01.html
+http://victoria.lviv.ua/html/fl5/NaturalLanguageProcessingWithPython.pdf
+http://www.stanford.edu/group/nasslli/courses/pereira/NASSLLI.pdf
+http://www.nltk.org/install.html
+http://www.cs.buap.mx/~dpinto/pln/Autumn2010/intencionestweets.pdf
+http://zonadelescribidor.blogspot.com/2008/12/cuntas-palabras-usamos-al-hablar-en.html
+http://www.cs.buap.mx/~dpinto/pln/Autumn2010/intencionestweets.pdf
+http://www.cs.bilkent.edu.tr/~hakan/publication/TweetClassification.pdf
+http://es.wikipedia.org/wiki/Indexaci%C3%B3n_Sem%C3%A1ntica_Latente
+http://www.cs.famaf.unc.edu.ar/~laura/freeNLP (herramientas para natural language processing)
+https://sites.google.com/site/modelosclasicosri/vectorial (modelo vectorial)
+http://www.crummy.com/software/BeautifulSoup/bs4/doc/ (documentacion beautifulsoap muy bueno)
+http://diccionario.terra.com.ar/diccionario/educacion (diccionario usado para obtener terminos)
+http://amatellanes.wordpress.com/2013/03/18/beautifulsoup-para-explorar-paginas-web-con-python/ (usar beautifulsoup corto)
+http://dl.e-book-free.com/2013/07/python_in_a_nutshell_2nd_edition.pdf (libro de python, recetas utiles)
+http://www.tutorialspoint.com/python/string_find.htm (buscar string en python)
+http://www.maestrosdelweb.com/editorial/guia-python-expresiones-regulares/(python expresiones regulares)
+http://aprendepythonvolando.blogspot.com/2012/07/tutorial-19-comunicacion-con-webs-en.html (comunicacion con webs con python)
+http://www.daltonico.net/2014/01/diccionario-de-la-rae-en-tu-linea-de.html (consultas de palabras en el diccionario RAE usando script bash linux)
+http://www.cfilt.iitb.ac.in/gwc2010/pdfs/63_eurown_for_python__Kahusk.pdf (wordnet en python articulo)
+http://es.wikipedia.org/wiki/EuroWordNet (definicion eurowordnet)
+http://nlp.lsi.upc.edu/freeling/index.php?option=com_content&task=view&id=18&Itemid=47 (freeling diccionario español)
+http://www.cs.famaf.unc.edu.ar/~laura/freeNLP (herramientas para procesamiento de lenguaje natural muy bueno)
+https://www.google.com.co/search?q=diciconarios+automaticos+para+python&rlz=1C1AVSX_enCO414CO418&oq=diciconarios+automaticos+para+python&aqs=chrome..69i57.6688j0j8&sourceid=chrome&es_sm=122&ie=UTF-8 (busqueda google diccionarios para python)
+http://www.lsi.us.es/~troyano/documentos/wordnet.pdf (presentacion wordnet como funciona)
+http://es.wikipedia.org/wiki/WordNet (definicion wordnet en wikipedia)
+http://www.infochimps.com/tags/twitter (posible dataset para tweeter no confirmado)
+https://github.com/djinn/freeling-python (freeling for python repositorio github)
+http://joedicastro.com/python-one-liners-potencia-en-una-sola-linea.html (scripts rapidos de python en una linea)
+http://pythonmania.wordpress.com/ (python gtk y glade guia rapida)
