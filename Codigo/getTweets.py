@@ -27,13 +27,24 @@ def getUserTimeLine(userId,api):
     print[s.text for s in statuses]
 # Llamada a la funcion
 
-tweets1=getTweetsAboutSubject("@mluciaramirez",api);
+tweets1=getTweetsAboutSubject("salud",api);
 
-f=open("MartaLuciaRamirez.txt","a")
+f=open("DataSet.txt","a")
 for t in tweets1:
     f.write(str(t.text.encode('utf-8'))+"\n")
-    f.write ('\n')
 
+tweets1=getTweetsAboutSubject("educacion",api);
+for t in tweets1:
+    f.write(str(t.text.encode('utf-8'))+"\n")
+tweets1=getTweetsAboutSubject("seguridad",api);
+for t in tweets1:
+    f.write(str(t.text.encode('utf-8'))+"\n")
+tweets1=getTweetsAboutSubject("empleo",api);
+for t in tweets1:
+    f.write(str(t.text.encode('utf-8'))+"\n")
+tweets1=getTweetsAboutSubject("paz",api);
+for t in tweets1:
+    f.write(str(t.text.encode('utf-8'))+"\n")
 f.close()
 
 
