@@ -1,7 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from pymongo import MongoClient
 import twitter
 
-# Datos de autenticación
+# Datos de autenticaciÃ³n
 OAUTH_TOKEN="241216389-m1AsDOevhm1G9FV5hS8kxqqr9BgUAZxGJxSISiA6"
 OAUTH_SECRET="X4vJ72EaZymWPyD5PHRWqcxA7Udjfzpu221haoJjxoBTR"
 CONSUMER_KEY="B5E0KOb0zf2PU1RapGne5qjMA"
@@ -15,12 +18,23 @@ api=twitter.Api(consumer_key=CONSUMER_KEY,
 
 #obtenemos los tweets
 def getTweetsAboutSubject(subject,api):
-    tweets=api.GetSearch(term=subject,lang="es");
-    for tweet in tweets:
-        print tweet.text
-        print "-----------------------------------"
+    tweets=api.GetSearch(term=subject,lang="es",count="100");
+    return tweets
 
+# obtener tweets de un solo usuario
+def getUserTimeLine(userId,api):
+    statuses=api.GetUserTimeline(userId)
+    print[s.text for s in statuses]
 # Llamada a la funcion
 
-getTweetsAboutSubject("Messi",api);
+tweets1=getTweetsAboutSubject("@mluciaramirez",api);
+
+f=open("MartaLuciaRamirez.txt","a")
+for t in tweets1:
+    f.write(str(t.text.encode('utf-8'))+"\n")
+    f.write ('\n')
+
+f.close()
+
+
     
