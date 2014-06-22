@@ -3,6 +3,7 @@
 
 import nltk
 import re
+from nltk.corpus import stopwords
 
 ###leer los ficheros de tweets y tokeniza en palabras
 
@@ -48,19 +49,23 @@ def eliminarLinks(ListTweets):
     ## retorna los tweets preprocesados
     return tweetp 
         
-def eliminarStopWords(stopWords,listaAprocesar):
-    ## eliminado de hipervinculos
-    tokens=[]
-    tokens.append(nltk.word_tokenize(linea))
-    for i in range(len(listaAprocesar)):
-        for j in range(len(listaAprocesar[i])):
-            if re.search('^https?://',listaAprocesar[i][j]):
-                del listaAprocesar[i][j]
+def eliminarStopWords(lstoftokens):
+    ## signos de twitter
+    s=set(['rt','@','#','.',',',';',':','!','?','¿'])
+    ## stop words
+    sw=set(stopwords.words('spanish'))
+    sw.update(s) ##union de los dos conjuntos
+    filtered_words=[]
+    for f in lstoftokens:
+        filtered_words.append([w.lower() for w in f if not w.lower() in sw])
+    return filtered_words
+    
 
 def tokenizar(listTweets):
     ## recibe una lista de tweets y devuelve la lista tokenizada por palabras
     tokens=[]
     for t in listTweets:
+        ## normalizamos las palabras
         tokens.append(nltk.word_tokenize(t))
     return tokens
         
@@ -70,6 +75,6 @@ def tokenizar(listTweets):
 listTT=leerFichero("Santos.txt")
 listTT=eliminarLinks(listTT)
 token=tokenizar(listTT)
-##eliminarStopWords('',listTT)
+token=eliminarStopWords(token)
 print token
 
