@@ -91,5 +91,6 @@ http://codehero.co/git-desde-cero-manejo-de-ramas-remotas/ (ramas remotas github
 http://git-scm.com/book/es/Ramificaciones-en-Git-Ramas-Remotas (ramificaciones remotas git)
 http://git-scm.com/book/es/Ramificaciones-en-Git-Procedimientos-b%C3%A1sicos-para-ramificar-y-fusionar (ramificar y fusionar)
 http://es.wikipedia.org/wiki/Lematizaci%C3%B3n (lematizacion)
-http://www.leccionespracticas.com/uncategorized/eliminar-tildes-con-python-solucionado (elimina tildes)
+http://www.leccionespracticas.com/uncategorized/eliminar-tildes-con-python-solucionado (elimina tildes funciona muy bien)
 http://guimi.net/blogs/hiparco/funcion-para-eliminar-acentos-en-python/ (elimina tildes)
+http://rooteando.com/ramas-y-fusiones-en-git (ramas en git)
