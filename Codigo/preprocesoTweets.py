@@ -4,6 +4,9 @@
 import nltk
 import re
 from nltk.corpus import stopwords
+from nltk.stem import SnowballStemmer
+import unicodedata
+
 
 ###leer los ficheros de tweets y tokeniza en palabras
 
@@ -68,13 +71,24 @@ def tokenizar(listTweets):
         ## normalizamos las palabras
         tokens.append(nltk.word_tokenize(t))
     return tokens
-        
-    
 
+
+def lematizador(listofwords):
+    spanish_stemmer=SnowballStemmer("spanish")
+    lemas=[]
+    for p in listofwords:
+        lemas.append([spanish_stemmer.stem(t) for t in p])
+    return lemas
+
+def elimina_tildes(cadena):
+    ## elimina las tildes debe entrar un unicode data u
+    s=''.join((c for c in unicodedata.normalize('NFD',cadena) if unicodedata.category(c)!='Mn'))
+    return s
     
 listTT=leerFichero("Santos.txt")
 listTT=eliminarLinks(listTT)
 token=tokenizar(listTT)
 token=eliminarStopWords(token)
-print token
+lema=lematizador(token)
+print lema
 
