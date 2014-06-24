@@ -38,6 +38,7 @@ print len(v)
 ##print b
 caracteristica=b.most_common(100)
 M=construirMat(l,caracteristica)
+## guardamos la matriz de caracteristicas
 np.save("DataSet.npy",M)
 
 
