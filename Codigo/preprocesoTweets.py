@@ -66,7 +66,8 @@ def eliminarLinks(ListTweets):
         
 def eliminarStopWords(lstoftokens):
     ## signos de twitter
-    s=set(['rt','@','#','.',',',';',':','!','?','¿','+','-','..','...',"'","''","uy"])
+    s=set(['rt','@','#','.',',',';',':','!','?','¿','+','-','..','...',"'","''","uy",u'``',')','(',u'mas' \
+           u'q','&','c','http','|','mas',u'\u2026'])
     ## stop words
     sw=set(stopwords.words('spanish'))
     sw.update(s) ##union de los dos conjuntos
@@ -132,12 +133,12 @@ def preprocesar(fileName):
     token=eliminarStopWords(token)
     lema=lematizador(token)
     voc=vocabulario(lema)
-##    b=bow(lema)
-    return voc
+    b=bow(lema)
+    sumba=bowDocumento(b[0])
+    return voc,sumba,lema
     
 ##print len(voc)
 ##print b
-##sumba=bowDocumento(b[0])
 ##l=graficar(sumba)
 ##print l
     
