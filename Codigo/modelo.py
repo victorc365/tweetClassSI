@@ -28,6 +28,7 @@ def construirVector(tweet,c):
 
 def construirMat(ts,c):
     m=[]
+    print len(ts)
     for i in range(len(ts)):
         m.append(construirVector(ts[i],c))
     return np.array(m)
