@@ -9,6 +9,12 @@ def cargaDatos(nombreArchivo):
 
 M=cargaDatos("DataSet.npy")
 ## proceso de clustering
-labels,error,nfound=Pycluster.kcluster(M,5)
+## hacemos varias corridas
+c=[]
+for i in range(5):
+    labels,error,nfound=Pycluster.kcluster(M,5)
+    c.append(labels)
 
+z=np.array(c)
+np.save("resultados.npy",z)
 print labels

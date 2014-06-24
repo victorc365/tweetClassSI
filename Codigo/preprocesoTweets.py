@@ -10,6 +10,7 @@ import matplotlib as plt
 import unicodedata
 import collections
 import numpy as np
+import pylab as pl
 
 ###leer los ficheros de tweets y tokeniza en palabras
 
@@ -109,20 +110,21 @@ def bowDocumento(bagw):
     return sumbag
 
 def graficar(sumbag):
-    mostcommon=sumbag.most_common(15)
+    mostcommon=sumbag.most_common(8)
     labels=[]
     valores=[]
     del(mostcommon[0])
     for i in range(len(mostcommon)):
         labels.append(mostcommon[i][0].encode('utf-8','ignore'))
         valores.append(mostcommon[i][1])
-    plt.pyplot.title('palabras mas mencionada')
-    valores=np.array(valores)
-    plt.pyplot.xticks(valores,labels,rotation=70)
-    plt.pyplot.hist(valores,binds=15)
-    plt.pyplot.xlabel('palabras')
-    plt.pyplot.ylabel('frecuencia')
-    plt.pyplot.show()
+    X=np.arange(len(mostcommon))
+    pl.bar(X,valores,facecolor='#0000FF',edgecolor='black')
+    ##colocar texto
+    i=0
+    for x,y in zip(X,valores):
+        pl.text(x+0.4,y+0.5,labels[i],ha='center',va='bottom')
+        i+=1
+    pl.show()
     return labels
 
 
@@ -139,6 +141,7 @@ def preprocesar(fileName):
     
 ##print len(voc)
 ##print b
+##v,sumba,lema=preprocesar('MartaLuciaRamirez.txt')
 ##l=graficar(sumba)
 ##print l
     
