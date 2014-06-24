@@ -1,0 +1,7 @@
+frases mas comunes santos (u'paz', 23), (u'siempr', 13), (u'emple', 12)
+numero de palabras en el vocabulario 4404
+numero de palabras usando lematizador 3491
+principales palabras de todos los documentos: u'emple': 111, u'paz': 108, u'segur': 106, u'salud': 100, u'educ': 96
+nuevo tamaño del bocabulario 3485, 3483
+numero de tweets 1307
+
