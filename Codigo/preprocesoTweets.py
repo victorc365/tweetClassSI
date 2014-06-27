@@ -119,6 +119,9 @@ def graficar(sumbag):
         valores.append(mostcommon[i][1])
     X=np.arange(len(mostcommon))
     pl.bar(X,valores,facecolor='#0000FF',edgecolor='black')
+    ## nombrar ejes
+    pl.xlabel('palabras mas comunes')
+    pl.ylabel('frecuencia de palabra')
     ##colocar texto
     i=0
     for x,y in zip(X,valores):

@@ -32,16 +32,20 @@ def construirMat(ts,c):
     for i in range(len(ts)):
         m.append(construirVector(ts[i],c))
     return np.array(m)
-        
-a=['Santos.txt','Zuluaga.txt','ClaraLopez.txt','MartaLuciaRamirez.txt','Penalosa.txt','DataSet.txt']
-v,b,l=contruirVocab(a)
+
+def vocabularioTotal():
+    a=['Santos.txt','Zuluaga.txt','ClaraLopez.txt','MartaLuciaRamirez.txt','Penalosa.txt','DataSet.txt']
+    v,b,l=contruirVocab(a)
+    return v,b,l
+
+
 ##print len(v)
 ## graficamos las palabras totales del documento
 ##l=pt.graficar(b)
 ##print b
-caracteristica=b.most_common(1000)
-M=construirMat(l,caracteristica)
+##caracteristica=b.most_common(1000)
+##M=construirMat(l,caracteristica)
 ## guardamos la matriz de caracteristicas
-np.save("DataSet.npy",M)
+##np.save("DataSet.npy",M)
 
 

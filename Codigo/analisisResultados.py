@@ -70,7 +70,7 @@ def graf(cl):
 
 
 ##graf(PenalosaClass)
-c1,c2,c3,c4,c5=organizarPorClase(tweets,resultados[0])
-b=pt.bow(c5)
-bows=pt.bowDocumento(b[0])
-pt.graficar(bows)
+##c1,c2,c3,c4,c5=organizarPorClase(tweets,resultados[0])
+##b=pt.bow(c5)
+##bows=pt.bowDocumento(b[0])
+##pt.graficar(bows)
