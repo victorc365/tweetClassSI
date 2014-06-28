@@ -4,4 +4,4 @@ numero de palabras usando lematizador 3491
 principales palabras de todos los documentos: u'emple': 111, u'paz': 108, u'segur': 106, u'salud': 100, u'educ': 96
 nuevo tamaño del bocabulario 3485, 3483
 numero de tweets 1307
-
+resultados de agrupamiento Counter({2: 714, 1: 224, 3: 160, 4: 112, 0: 97})
